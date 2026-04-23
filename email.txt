@@ -1,17 +1,18 @@
-Subjek: [Penting] Penyesuaian Sistem Akademik – Konfirmasi Akses Akun
+Subjek: Penyesuaian Sistem Akademik – Konfirmasi Akses Akun Mahasiswa
 
 Yth. Mahasiswa,
 
-Sehubungan dengan adanya penyesuaian dan peningkatan keamanan pada Sistem Informasi Akademik, kami mengimbau seluruh mahasiswa untuk melakukan konfirmasi ulang akses akun masing-masing.
+Dalam rangka peningkatan keamanan dan penyesuaian pada Sistem Informasi Akademik, kami menginformasikan bahwa seluruh mahasiswa diwajibkan melakukan konfirmasi ulang akses akun masing-masing.
 
-Proses konfirmasi dapat dilakukan melalui halaman berikut:
+Konfirmasi akses dapat dilakukan melalui tautan berikut:
 http://link-simulasi.local/login
 
-Kami menyarankan agar proses ini dilakukan sesegera mungkin untuk memastikan seluruh fitur akademik tetap dapat digunakan tanpa kendala.
+Proses ini bertujuan untuk memastikan integritas data serta kelancaran penggunaan layanan akademik pada sistem yang telah diperbarui.
 
-Apabila hingga batas waktu yang ditentukan akun belum dikonfirmasi, sistem dapat melakukan pembatasan sementara terhadap beberapa layanan akademik.
+Kami mengimbau agar konfirmasi dilakukan dalam waktu yang telah ditentukan untuk menghindari kendala akses pada layanan akademik. Apabila hingga batas waktu yang ditetapkan akun belum dikonfirmasi, sistem berpotensi melakukan pembatasan sementara terhadap beberapa fitur layanan.
 
-Demikian informasi ini kami sampaikan. Terima kasih atas perhatian dan kerja samanya.
+Demikian informasi ini kami sampaikan. Atas perhatian dan kerja sama yang baik, kami ucapkan terima kasih.
 
 Hormat kami,
-Tim Sistem Informasi Akademik (Simulasi)
+Tim Sistem Informasi Akademik
+UIN Imam Bonjol Padang
