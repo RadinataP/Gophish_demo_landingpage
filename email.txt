@@ -1,0 +1,17 @@
+Subjek: [Penting] Penyesuaian Sistem Akademik – Konfirmasi Akses Akun
+
+Yth. Mahasiswa,
+
+Sehubungan dengan adanya penyesuaian dan peningkatan keamanan pada Sistem Informasi Akademik, kami mengimbau seluruh mahasiswa untuk melakukan konfirmasi ulang akses akun masing-masing.
+
+Proses konfirmasi dapat dilakukan melalui halaman berikut:
+http://link-simulasi.local/login
+
+Kami menyarankan agar proses ini dilakukan sesegera mungkin untuk memastikan seluruh fitur akademik tetap dapat digunakan tanpa kendala.
+
+Apabila hingga batas waktu yang ditentukan akun belum dikonfirmasi, sistem dapat melakukan pembatasan sementara terhadap beberapa layanan akademik.
+
+Demikian informasi ini kami sampaikan. Terima kasih atas perhatian dan kerja samanya.
+
+Hormat kami,
+Tim Sistem Informasi Akademik (Simulasi)

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal KKN UIN IB</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(135deg, #7A1E1E, #5A1515);
+}
+
+/* LIGHT SOFT */
+.light {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1), transparent 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+/* BATIK STATIC */
+.batik {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 400px;
+  height: 400px;
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='white' fill-opacity='0.04'%3E%3Ccircle cx='40' cy='40' r='18'/%3E%3Ccircle cx='120' cy='120' r='18'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* SPLASH */
+#splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #7A1E1E, #5A1515);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: 1s;
+}
+
+#splash h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-align: center;
+  max-width: 500px;
+}
+
+/* MAIN */
+#main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateX(100%);
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#main.active {
+  transform: translateX(0);
+}
+
+/* CARD GLASS */
+.card {
+  position: relative;
+  z-index: 5;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 40px;
+  width: 360px;
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.4),
+    inset 0 0 0 1px rgba(255,255,255,0.1);
+
+  color: white;
+
+  transform: translateY(30px);
+  opacity: 0;
+  animation: cardIn 1s ease forwards;
+}
+
+.card h2 {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(255,255,255,0.3);
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+
+  background: linear-gradient(135deg, #ff6b6b, #7A1E1E);
+  color: white;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* ANIMATION */
+@keyframes cardIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="light"></div>
+<div class="batik"></div>
+
+<!-- SPLASH -->
+<div id="splash">
+  <h1 id="text"></h1>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+  <div class="card">
+    <h2>Portal KKN</h2>
+    <p class="subtitle">UIN Imam Bonjol Padang</p>
+
+    <form>
+      <input type="text" placeholder="NIM / Email">
+      <input type="password" placeholder="Password">
+      <button>Masuk</button>
+    </form>
+  </div>
+</div>
+
+<script>
+// TYPING
+const msg = "Selamat datang di Portal KKN UIN IB";
+let i = 0;
+
+function typing(){
+  if(i < msg.length){
+    document.getElementById("text").innerHTML += msg.charAt(i);
+    i++;
+    setTimeout(typing, 35);
+  }
+}
+typing();
+
+// TRANSISI
+setTimeout(()=>{
+  document.getElementById("splash").style.opacity = "0";
+
+  setTimeout(()=>{
+    document.getElementById("splash").style.display = "none";
+    document.getElementById("main").classList.add("active");
+  },800);
+
+},3000);
+
+// LIGHT FOLLOW
+document.addEventListener("mousemove",(e)=>{
+  const light = document.querySelector(".light");
+  light.style.left = e.clientX+"px";
+  light.style.top = e.clientY+"px";
+});
+</script>
+
+</body>
+</html>
